@@ -1,0 +1,18 @@
+<!--  Header -->
+<%- include("header") -%>
+
+
+<!-- Compose Content -->
+<form action="/compose" method="post">
+
+<H1 style="display: inline-block;"><b>Compose</b></H1><p style="display: inline;">(Add new Blog)</p>
+<h4>Title</h4>
+<textarea name="BlogTitle" placeholder="Enter the Title" rows="2" cols="120"></textarea>
+<h4>Blog</h4>
+<textarea name="NewBlog" placeholder="Enter your Content" rows="10" cols="120"></textarea>
+<br>
+<button type="submit" name="SubmitButton" style="background-color:blue;color: white;" > Publish</button>
+</form>
+
+<!--  Footer -->
+<%- include("footer")-%>

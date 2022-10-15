@@ -1,0 +1,16 @@
+<!--  Header -->
+<%- include("header") -%>
+
+<!-- Middle Content -->
+<H1><b>Home</b></H1>
+<p><%= startingContent %></p>
+
+<!-- Using Loop (Either for loop)  to print the User Inputs-->
+<% Posts.forEach(function(Post) { %>  
+<h1><%=  Post.Title %></h1>
+<p><%=  Post.newblog.substring(0,100) + "...." %><a href="/post/ <%=  Post.Title %>">Read more</a></p>
+<% }) %>
+
+
+<!--  Footer -->
+<%- include("footer")-%>
